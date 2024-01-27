@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-:root {
-  background-color: #242424;
+@font-face {
+  font-family: "rabar";
+  src: url("./assets/fonts/Rabar_021.ttf");
 }
 
-
+body {
+  background-color: #1f2937;
+}

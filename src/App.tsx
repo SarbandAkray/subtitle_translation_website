@@ -1,16 +1,17 @@
-import { useState } from "react";
-import FileDownload from "./components/fileDownload";
-import FileUpload from "./components/fileUpload";
-import Status from "./components/status";
+import Container from "./components/Container";
+import FileUpload from "./components/FileUpload";
+import Footer from "./components/Footer";
+import Intro from "./components/Intro";
 
 function App() {
   return (
-    <>
-      <div className="w-screen h-screen flex flex-col md:flex-row  text-white gap-3">
-  
+    <div className="font-rabar">
+      <Container>
+        <Intro />
         <FileUpload />
-      </div>
-    </>
+      </Container>
+      <Footer />
+    </div>
   );
 }
 

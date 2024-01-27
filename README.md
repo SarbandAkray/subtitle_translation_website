@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# KurdSub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KurdSub is a web application that translates English subtitle files into Kurdish, allowing you to enjoy YouTube videos or movies with Kurdish subtitles.
 
-Currently, two official plugins are available:
+## Technology
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Reverse API
+- React with Tailwind CSS
+- Zustand for state management
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+KurdSub is a vital application for translation. Follow the steps below to get started:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Make sure you have Node.js and npm installed.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Installation Steps
+
+To get started with KurdSub, follow these steps:
+
+#### Clone the repository:
+
+    git clone https://github.com/mohammedd-jabbar/kurdSub.git
+
+#### Navigate to the project directory:
+
+    cd kurdsub
+
+#### Install dependencies:
+
+    npm install
+
+#### Run the development server:
+
+    npm run dev
+
+Now you're all set! KurdSub is up and running on your local machine.
+
+## Usage
+
+- Open the application in your web browser.
+- Upload an English subtitle file (SRT format).
+- KurdSub will translate the subtitles into Kurdish.
+
+## Dependencies
+
+- Zustand
+- React-Dropzone
+
+## License
+
+This project is licensed under the GNU General Public License v3.0.

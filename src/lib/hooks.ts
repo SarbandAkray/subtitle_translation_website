@@ -4,7 +4,7 @@ export async function translate(line: string) {
 
   const raw = line;
 
-  const requestOptions = {
+  const requestOptions: RequestInit = {
     method: "POST",
     headers: myHeaders,
     body: raw,

@@ -1,4 +1,5 @@
 export async function translate(line: string) {
+  console.log("origin changed");
   const result = await fetch(
     "https://translator-api.glosbe.com/translateByLangWithScore?sourceLang=en&targetLang=ckb",
     {
@@ -15,11 +16,13 @@ export async function translate(line: string) {
         "sec-gpc": "1",
         Referer: "https://glosbe.com/",
         Origin: "http://localhost",
+        "Access-Control-Allow-Origin": "http://localhost:3000",
         // "Referrer-Policy": "strict-origin-when-cross-origin",
       },
       body: line,
       method: "POST",
     }
   );
+
   return await result.json();
 }

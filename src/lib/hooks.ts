@@ -14,7 +14,7 @@ export async function translate(line: string) {
         "sec-fetch-site": "same-site",
         "sec-gpc": "1",
         Referer: "https://glosbe.com/",
-
+        Origin: "http://localhost",
         // "Referrer-Policy": "strict-origin-when-cross-origin",
       },
       body: line,

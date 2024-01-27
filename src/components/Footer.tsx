@@ -4,7 +4,7 @@ const Footer = () => {
       <p className="text-sm">
         © 2024 KurdSub.{" "}
         <a
-          href="https://github.com/mohammedd-jabbar/kurdSub"
+          href="https://github.com/SarbandAkray/subtitle_translation_website"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"

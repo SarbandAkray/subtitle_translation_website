@@ -11,7 +11,7 @@ export async function translate(line: string) {
         "sec-ch-ua-mobile": "?0",
         "sec-ch-ua-platform": '"Windows"',
         "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "no-cors",
+        "sec-fetch-mode": "cors",
         "sec-fetch-site": "same-site",
         "sec-gpc": "1",
         Referer: "https://glosbe.com/",

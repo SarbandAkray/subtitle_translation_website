@@ -1,5 +1,6 @@
 import Container from "./components/Container";
-import FileUpload from "./components/FileUpload";
+import DownloadSection from "./components/DownloadSection";
+
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 
@@ -8,7 +9,7 @@ function App() {
     <div className="font-rabar">
       <Container>
         <Intro />
-        <FileUpload />
+        <DownloadSection />
       </Container>
       <Footer />
     </div>

@@ -35,11 +35,8 @@ export default function DownloadSection() {
             {windowsStarted === false ? (
               <button
                 onClick={() => {
-                  setWindowsStarted(true);
-                  handleDownload(
-                    "/setupFiles/0.0.1/Zhernus-0.0.1-setup.exe",
-                    "Zhernus-0.0.1-setup.exe"
-                  );
+                  location.href = "/setupFiles/0.0.1/Zhernus-0.0.1-setup.exe";
+                  
                 }}
                 className="bg-green-600  p-2 px-4 rounded-md hover:bg-green-800"
               >
@@ -57,11 +54,7 @@ export default function DownloadSection() {
             {macStarted === false ? (
               <button
                 onClick={() => {
-                  setMacStarted(true);
-                  handleDownload(
-                    "/setupFiles/0.0.1/Zhernus-0.0.1.dmg",
-                    "Zhernus-0.0.1.dmg"
-                  );
+                  location.href =   "/setupFiles/0.0.1/Zhernus-0.0.1.dmg";
                 }}
                 className="bg-green-600  p-2 px-4 rounded-md hover:bg-green-800"
               >
@@ -79,11 +72,10 @@ export default function DownloadSection() {
             {linuxStarted === false ? (
               <button
                 onClick={() => {
-                  setLinuxStarted(true);
-                  handleDownload(
-                    "/setupFiles/0.0.1/Zhernus_0.0.1_amd64.deb",
-                    "Zhernus_0.0.1_amd64.deb"
-                  );
+                
+                    location.href = "/setupFiles/0.0.1/Zhernus_0.0.1_amd64.deb";
+                  
+                 
                 }}
                 className="bg-green-600  p-2 px-4 rounded-md hover:bg-green-800"
               >

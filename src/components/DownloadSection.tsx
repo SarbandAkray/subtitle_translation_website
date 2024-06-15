@@ -2,27 +2,25 @@ import windowsLogo from "/paltformLogos/windows.png";
 import macLogo from "/paltformLogos/macbook.png";
 import linuxLogo from "/paltformLogos/linux.png";
 import androidLogo from "/paltformLogos/android.png";
-import axios from "axios";
-import fileDownload from "js-file-download";
 import { useState } from "react";
 
 export default function DownloadSection() {
-  const [windowsStarted, setWindowsStarted] = useState(false);
-  const [macStarted, setMacStarted] = useState(false);
-  const [linuxStarted, setLinuxStarted] = useState(false);
+  const [windowsStarted] = useState(false);
+  const [macStarted] = useState(false);
+  const [linuxStarted] = useState(false);
 
-  const handleDownload = (url: string, filename: string) => {
-    axios
-      .get(url, {
-        responseType: "blob",
-      })
-      .then((res) => {
-        fileDownload(res.data, filename);
-        setWindowsStarted(false);
-        setLinuxStarted(false);
-        setMacStarted(false);
-      });
-  };
+  // const handleDownload = (url: string, filename: string) => {
+  //   axios
+  //     .get(url, {
+  //       responseType: "blob",
+  //     })
+  //     .then((res) => {
+  //       fileDownload(res.data, filename);
+  //       setWindowsStarted(false);
+  //       setLinuxStarted(false);
+  //       setMacStarted(false);
+  //     });
+  // };
   return (
     <div className="w-screen flex flex-col gap-10 align-middle justify-center text-center">
       <div>
@@ -36,7 +34,6 @@ export default function DownloadSection() {
               <button
                 onClick={() => {
                   location.href = "/setupFiles/0.0.1/Zhernus-0.0.1-setup.exe";
-                  
                 }}
                 className="bg-green-600  p-2 px-4 rounded-md hover:bg-green-800"
               >
@@ -54,7 +51,7 @@ export default function DownloadSection() {
             {macStarted === false ? (
               <button
                 onClick={() => {
-                  location.href =   "/setupFiles/0.0.1/Zhernus-0.0.1.dmg";
+                  location.href = "/setupFiles/0.0.1/Zhernus-0.0.1.dmg";
                 }}
                 className="bg-green-600  p-2 px-4 rounded-md hover:bg-green-800"
               >
@@ -72,10 +69,7 @@ export default function DownloadSection() {
             {linuxStarted === false ? (
               <button
                 onClick={() => {
-                
-                    location.href = "/setupFiles/0.0.1/Zhernus_0.0.1_amd64.deb";
-                  
-                 
+                  location.href = "/setupFiles/0.0.1/Zhernus_0.0.1_amd64.deb";
                 }}
                 className="bg-green-600  p-2 px-4 rounded-md hover:bg-green-800"
               >
